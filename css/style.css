@@ -1,0 +1,192 @@
+/* style.css */
+@font-face {
+	font-family: 'Amazon Ember';
+	font-weight: 400;
+	font-style: normal;
+	src: url(../fonts/AmazonEmberDisplay_W_Rg.woff);
+	font-display: swap
+}
+
+@font-face {
+	font-family: 'Amazon Ember';
+	font-weight: 700;
+	font-style: normal;
+	src: url(../fonts/AmazonEmberDisplay_W_Bd.woff);
+	font-display: swap
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+  font-family: 'Amazon Ember';
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%; /* Занимаем всю ширину на маленьких экранах */
+  max-width: 350px; /* Ограничиваем ширину на больших экранах */
+  margin: 0 auto; /* Центрируем */
+  text-align: center;
+}
+
+.logo {
+  margin-bottom: 20px;
+}
+
+.logo img {
+  width: 103px;
+  height: 31px;
+}
+
+.signin-box {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px 26px;
+  text-align: left;
+}
+
+.signin-box h1 {
+  font-size: 28px;
+  font-weight: normal;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  height: 31px;
+  padding: 3px 7px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+.signin-box button[type="submit"] {
+  width: 100%;
+  background-color: #FFD814;
+  border: 3px solid #007185;
+  border-radius: 50px;
+  padding: 8px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.signin-box button[type="submit"]:hover {
+  background-color: #F7CA00;
+}
+
+.help-text {
+  font-size: 12px;
+  text-align: left;
+}
+
+.help-text a {
+  color: #007185;
+  text-decoration: none;
+  border-bottom: 1px solid #007185;
+}
+
+.help-text a:hover {
+    color: #D76819;
+    border-bottom: 1px solid #D76819;
+ }
+
+.new-to-amazon {
+  margin-top: 20px;
+  text-align: center;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.new-to-amazon h5 {
+  font-size: 13px;
+  font-weight: normal;
+  color: #767676;
+}
+
+.new-to-amazon h5:before,
+.new-to-amazon h5:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 30%;
+  height: 1px;
+  background: #ddd;
+}
+
+.new-to-amazon h5:before {
+  left: 0;
+}
+
+.new-to-amazon h5:after {
+  right: 0;
+}
+
+.create-account {
+  width: 100%;
+  background-color: #e7e9ec;
+  border: 1px solid #adb1b8;
+  border-radius: 3px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.footer {
+    width: 100%;
+    padding-top: 50px;
+  border-top: 1px solid #ddd;
+  margin-top: 30px;
+  text-align: center;
+  font-size: 12px;
+  color: #555;
+}
+
+.footer-links {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #007185;
+  text-decoration: none;
+  margin: 0 10px;
+
+}
+.footer-links a:hover {
+   color: #D76819;
+   border-bottom: 1px solid #D76819;
+}
+
+.copyright {
+  font-size: 11px;
+}
+
+/* Медиа-запросы для адаптивности */
+@media (max-width: 768px) {
+  .container {
+    padding: 0; /* Убираем отступы на очень маленьких экранах */
+  }
+  body {
+    padding: 0;
+  }
+}
